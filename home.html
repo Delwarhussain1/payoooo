@@ -22,7 +22,7 @@
             <div class="stats shadow">
               <div class="stat">
                 <div class="stat-title">Avalabel balance</div>
-                <div class="stat-value">9,400</div>
+                <div id="balance" class="stat-value">9400</div>
               </div>
             </div>
             <!-- balance end -->
@@ -40,9 +40,11 @@
               <!-- cash out  btn -->
             </div>
             <div class="divider"></div>
-            <!-- form start  -->
+            <!-- form start for Add money -->
             <div>
-              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <div
+                class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+              >
                 <form class="card-body">
                   <div class="form-control">
                     <label class="label">
@@ -78,11 +80,49 @@
                 </form>
               </div>
             </div>
-            <!-- form end -->
+            <!-- form end for add money-->
+            <!-- Cash out start -->
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Amaount</span>
+                  </label>
+                  <input
+                    id="cash-out-amaount"
+                    type="text"
+                    placeholder="Enter Amaount to cash out"
+                    class="input input-bordered"
+                    required
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">PIN number</span>
+                  </label>
+                  <input
+                    id="cash-out-pin"
+                    type="password"
+                    placeholder="Your PIN  number"
+                    class="input input-bordered"
+                    required
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="form-control mt-6">
+                  <button id="cash-out-btn" class="btn btn-primary">
+                    Cash out
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!-- Cash out end -->
           </div>
         </div>
       </div>
     </main>
     <script src="js/home.js"></script>
+    <script src="js/cashOut.js"></script>
   </body>
 </html>
